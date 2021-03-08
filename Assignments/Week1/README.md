@@ -12,3 +12,5 @@
     sudo apt-get install python3-numpy
     sudo apt-get install python3-matplotlib
     sudo apt-get install python-OpenCV
+# Reference
+    https://learnopencv.com/read-write-and-display-a-video-using-opencv-cpp-python/?fbclid=IwAR3hQM8co7nVa8jpZPHBCxooxsKqM_YrnlFQOe9iYgL4QsaTlR_1VVpTZ_g
