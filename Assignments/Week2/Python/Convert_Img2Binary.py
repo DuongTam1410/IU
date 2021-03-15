@@ -5,7 +5,7 @@ import numpy
 from codecs import decode
 import struct
 
-img = cv.imread('velkoz_gray.jpg')
+img = cv.imread('velkoz_color.jpg')
 img_width = img.shape[0]
 img_height = img.shape[1]
 
