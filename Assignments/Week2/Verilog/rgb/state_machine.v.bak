@@ -1,0 +1,48 @@
+module state_machine(clk, i,w, donee, state, resetD, resetM);
+
+input [4:0] i;
+output resetD, resetM;
+wire resetD, resetM;
+input clk, w, donee;
+output [2:0] state;
+
+
+reg [2:0] state, nstate;
+
+parameter importt = 3'b0;
+parameter decrease = 3'b1;
+parameter mul = 3'd2;
+parameter div = 3'd3;
+parameter add = 3'd4;
+parameter done = 3'd5;
+always @(posedge clk) begin
+     state = nstate;
+	 end
+always @(i, state,w,donee) begin
+  case(state)
+  importt:
+  nstate = decrease;
+  decrease:
+  if(i == 0)
+    nstate = done;
+  else 
+    nstate = mul;
+  mul:
+  if(w)
+  nstate = div;
+  else
+  nstate = mul;
+  div:
+  if(donee)
+  nstate = add;
+  else
+  nstate = div;
+  add:
+  nstate = decrease;
+  default nstate = importt;
+  endcase
+
+  end
+   assign resetD = (state == add) ? 1'b1 : 1'b0;
+ assign resetM = (state == div) ? 1'b1 : 1'b0; 
+  endmodule
