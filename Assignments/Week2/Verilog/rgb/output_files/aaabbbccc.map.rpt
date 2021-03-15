@@ -1,0 +1,540 @@
+Analysis & Synthesis report for aaabbbccc
+Mon Mar 15 16:45:56 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |mulFP|mul23bits2:m23bis_ins|state
+  9. State Machine - |mulFP|mul23bits2:m23bis_ins|control_test22:cwt|state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: mul23bits2:m23bis_ins|control_test22:cwt
+ 16. Port Connectivity Checks: "mul23bits2:m23bis_ins"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Mar 15 16:45:55 2021           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; aaabbbccc                                       ;
+; Top-level Entity Name              ; mulFP                                           ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 669                                             ;
+;     Total combinational functions  ; 668                                             ;
+;     Dedicated logic registers      ; 127                                             ;
+; Total registers                    ; 127                                             ;
+; Total pins                         ; 147                                             ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; mulFP              ; aaabbbccc          ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                   ;
++----------------------------------+-----------------+------------------------+----------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path     ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------+---------+
+; register_64bits.v                ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/register_64bits.v ;         ;
+; register_32bits.v                ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/register_32bits.v ;         ;
+; pls.v                            ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/pls.v             ;         ;
+; multiplier.v                     ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/multiplier.v      ;         ;
+; multiplicand.v                   ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/multiplicand.v    ;         ;
+; mulFP.v                          ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/mulFP.v           ;         ;
+; mul23bits2.v                     ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/mul23bits2.v      ;         ;
+; ex_mul.v                         ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/ex_mul.v          ;         ;
+; control_test22.v                 ; yes             ; User Verilog HDL File  ; D:/verilog/rgb/control_test22.v  ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 669   ;
+;                                             ;       ;
+; Total combinational functions               ; 668   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 354   ;
+;     -- 3 input functions                    ; 243   ;
+;     -- <=2 input functions                  ; 71    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 546   ;
+;     -- arithmetic mode                      ; 122   ;
+;                                             ;       ;
+; Total registers                             ; 127   ;
+;     -- Dedicated logic registers            ; 127   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 147   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; reset ;
+; Maximum fan-out                             ; 172   ;
+; Total fan-out                               ; 2810  ;
+; Average fan-out                             ; 2.98  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                          ; Library Name ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+--------------+
+; |mulFP                                ; 668 (293)         ; 127 (0)      ; 0           ; 0            ; 0       ; 0         ; 147  ; 0            ; |mulFP                                                                       ; work         ;
+;    |ex_mul:hhhhjkf|                   ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|ex_mul:hhhhjkf                                                        ; work         ;
+;    |mul23bits2:m23bis_ins|            ; 312 (197)         ; 127 (50)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins                                                 ; work         ;
+;       |control_test22:cwt|            ; 17 (17)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins|control_test22:cwt                              ; work         ;
+;       |multiplicand:md_inst|          ; 74 (52)           ; 48 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins|multiplicand:md_inst                            ; work         ;
+;          |register_64bits:reg64_inst| ; 22 (22)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst ; work         ;
+;       |multiplier:mr_inst|            ; 24 (1)            ; 24 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins|multiplier:mr_inst                              ; work         ;
+;          |register_32bits:reg32_inst| ; 23 (23)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst   ; work         ;
+;    |pls:pl_ins1t|                     ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mulFP|pls:pl_ins1t                                                          ; work         ;
++---------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------+
+; State Machine - |mulFP|mul23bits2:m23bis_ins|state ;
++----------+----------+----------+-------------------+
+; Name     ; state.00 ; state.10 ; state.01          ;
++----------+----------+----------+-------------------+
+; state.00 ; 0        ; 0        ; 0                 ;
+; state.01 ; 1        ; 0        ; 1                 ;
+; state.10 ; 1        ; 1        ; 0                 ;
++----------+----------+----------+-------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------+
+; State Machine - |mulFP|mul23bits2:m23bis_ins|control_test22:cwt|state                     ;
++--------------+-------------+----------+----------+--------------+-----------+-------------+
+; Name         ; state.write ; state.sr ; state.sl ; state.no_add ; state.add ; state.reset ;
++--------------+-------------+----------+----------+--------------+-----------+-------------+
+; state.reset  ; 0           ; 0        ; 0        ; 0            ; 0         ; 0           ;
+; state.add    ; 0           ; 0        ; 0        ; 0            ; 1         ; 1           ;
+; state.no_add ; 0           ; 0        ; 0        ; 1            ; 0         ; 1           ;
+; state.sl     ; 0           ; 0        ; 1        ; 0            ; 0         ; 1           ;
+; state.sr     ; 0           ; 1        ; 0        ; 0            ; 0         ; 1           ;
+; state.write  ; 1           ; 0        ; 0        ; 0            ; 0         ; 1           ;
++--------------+-------------+----------+----------+--------------+-----------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; pls:pl_ins1t|count[3]                              ; GND                 ; yes                    ;
+; pls:pl_ins1t|count[2]                              ; GND                 ; yes                    ;
+; pls:pl_ins1t|count[0]                              ; GND                 ; yes                    ;
+; pls:pl_ins1t|count[1]                              ; GND                 ; yes                    ;
+; pls:pl_ins1t|count[4]                              ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 5  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++-----------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                     ; Reason for Removal                     ;
++-----------------------------------------------------------------------------------+----------------------------------------+
+; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[24..31]   ; Stuck at GND due to stuck port data_in ;
+; mul23bits2:m23bis_ins|control_test22:cwt|state~4                                  ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|control_test22:cwt|state~5                                  ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|control_test22:cwt|state~6                                  ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|state.10                                                    ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|control_test22:cwt|state.write                              ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[48..63] ; Lost fanout                            ;
+; mul23bits2:m23bis_ins|pro_test[48..63]                                            ; Lost fanout                            ;
+; Total Number of Removed Registers = 45                                            ;                                        ;
++-----------------------------------------------------------------------------------+----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                ;
++-------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------+
+; Register name                                                                 ; Reason for Removal        ; Registers Removed due to This Register                                         ;
++-------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------+
+; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[63] ; Lost Fanouts              ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[62], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[61], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[60], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[59], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[58], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[57], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[56], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[55], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[54], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[53], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[52], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[51], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[50], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[49], ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst|out[48]  ;
+; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[31]   ; Stuck at GND              ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[30],   ;
+;                                                                               ; due to stuck port data_in ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[29],   ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[28],   ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[27],   ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[26],   ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[25],   ;
+;                                                                               ;                           ; mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst|out[24]    ;
+; mul23bits2:m23bis_ins|control_test22:cwt|state~4                              ; Lost Fanouts              ; mul23bits2:m23bis_ins|control_test22:cwt|state.write                           ;
++-------------------------------------------------------------------------------+---------------------------+--------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 127   ;
+; Number of registers using Synchronous Clear  ; 48    ;
+; Number of registers using Synchronous Load   ; 45    ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 48    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 64 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |mulFP|mul23bits2:m23bis_ins|pro_test[5] ;
+; 3:1                ; 48 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |mulFP|mul23bits2:m23bis_ins|multi[29]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |mulFP|FPmul[30]                         ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 27 LEs               ; 0 LEs                  ; No         ; |mulFP|fn2_mul                           ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; No         ; |mulFP|fn2_mul                           ;
+; 10:1               ; 7 bits    ; 42 LEs        ; 35 LEs               ; 7 LEs                  ; No         ; |mulFP|fn2_mul                           ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 18 LEs               ; 3 LEs                  ; No         ; |mulFP|fn2_mul                           ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |mulFP|fn2_mul                           ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; No         ; |mulFP|fn2_mul                           ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 10 LEs               ; 8 LEs                  ; No         ; |mulFP|pls:pl_ins1t|count[3]             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mul23bits2:m23bis_ins|control_test22:cwt ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; reset          ; 000   ; Unsigned Binary                                              ;
+; add            ; 001   ; Unsigned Binary                                              ;
+; no_add         ; 010   ; Unsigned Binary                                              ;
+; sl             ; 011   ; Unsigned Binary                                              ;
+; sr             ; 100   ; Unsigned Binary                                              ;
+; write          ; 101   ; Unsigned Binary                                              ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mul23bits2:m23bis_ins"                                                                                                                               ;
++----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                                          ;
++----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+; cand     ; Input  ; Warning  ; Input port expression (24 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "cand[31..24]" will be connected to GND. ;
+; cand[31] ; Input  ; Info     ; Stuck at VCC                                                                                                                                     ;
+; er       ; Input  ; Warning  ; Input port expression (24 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "er[31..24]" will be connected to GND.   ;
+; er[31]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                     ;
+; multi    ; Output ; Warning  ; Output or bidir port (64 bits) is wider than the port expression (48 bits) it drives; bit(s) "multi[63..48]" have no fanouts                     ;
++----------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Mar 15 16:45:53 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aaabbbccc -c aaabbbccc
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file test_string.v
+    Info (12023): Found entity 1: test_string
+Info (12021): Found 1 design units, including 1 entities, in source file test_exponent.v
+    Info (12023): Found entity 1: test_exponent
+Info (12021): Found 1 design units, including 1 entities, in source file test_ex.v
+    Info (12023): Found entity 1: test_ex
+Info (12021): Found 1 design units, including 1 entities, in source file test_addition2.v
+    Info (12023): Found entity 1: test_addition2
+Info (12021): Found 1 design units, including 1 entities, in source file test_addition.v
+    Info (12023): Found entity 1: test_addition
+Info (12021): Found 1 design units, including 1 entities, in source file take_bits2.v
+    Info (12023): Found entity 1: take_bits2
+Info (12021): Found 1 design units, including 1 entities, in source file take_bits.v
+    Info (12023): Found entity 1: take_bits
+Info (12021): Found 1 design units, including 1 entities, in source file sum_first.v
+    Info (12023): Found entity 1: sum_first
+Info (12021): Found 1 design units, including 1 entities, in source file state_machine222.v
+    Info (12023): Found entity 1: state_machine222
+Info (12021): Found 1 design units, including 1 entities, in source file state_machine.v
+    Info (12023): Found entity 1: state_machine
+Info (12021): Found 1 design units, including 1 entities, in source file sm_extra_2.v
+    Info (12023): Found entity 1: sm_extra_2
+Info (12021): Found 1 design units, including 1 entities, in source file sm_extra_1.v
+    Info (12023): Found entity 1: sm_extra_1
+Info (12021): Found 1 design units, including 1 entities, in source file small_alu.v
+    Info (12023): Found entity 1: small_alu
+Info (12021): Found 1 design units, including 1 entities, in source file register_64bits.v
+    Info (12023): Found entity 1: register_64bits
+Info (12021): Found 1 design units, including 1 entities, in source file register_50bits.v
+    Info (12023): Found entity 1: register_50bits
+Info (12021): Found 1 design units, including 1 entities, in source file register_32bits.v
+    Info (12023): Found entity 1: register_32bits
+Info (12021): Found 1 design units, including 1 entities, in source file register_24bits.v
+    Info (12023): Found entity 1: register_24bits
+Info (12021): Found 1 design units, including 1 entities, in source file register_100bits.v
+    Info (12023): Found entity 1: register_100bits
+Info (12021): Found 1 design units, including 1 entities, in source file quotient.v
+    Info (12023): Found entity 1: quotient
+Info (12021): Found 1 design units, including 1 entities, in source file pls22.v
+    Info (12023): Found entity 1: pls22
+Info (12021): Found 1 design units, including 1 entities, in source file pls.v
+    Info (12023): Found entity 1: pls
+Info (12021): Found 1 design units, including 1 entities, in source file part3_addition.v
+    Info (12023): Found entity 1: part3_addition
+Info (12021): Found 1 design units, including 1 entities, in source file part2_exandf.v
+    Info (12023): Found entity 1: part2_ExAndF
+Info (12021): Found 1 design units, including 1 entities, in source file part2_control.v
+    Info (12023): Found entity 1: part2_control
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier_q50.v
+    Info (12023): Found entity 1: multiplier_q50
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier_q24.v
+    Info (12023): Found entity 1: multiplier_q24
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier_q.v
+    Info (12023): Found entity 1: multiplier_q
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
+    Info (12023): Found entity 1: multiplier
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicand_d100.v
+    Info (12023): Found entity 1: multiplicand_d100
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicand_d.v
+    Info (12023): Found entity 1: multiplicand_d
+Info (12021): Found 1 design units, including 1 entities, in source file multiplicand.v
+    Info (12023): Found entity 1: multiplicand
+Info (12021): Found 1 design units, including 1 entities, in source file mulfp.v
+    Info (12023): Found entity 1: mulFP
+Info (12021): Found 1 design units, including 1 entities, in source file mul23bits2.v
+    Info (12023): Found entity 1: mul23bits2
+Info (12021): Found 1 design units, including 1 entities, in source file mul23bits.v
+    Info (12023): Found entity 1: mul23bits
+Info (12021): Found 1 design units, including 1 entities, in source file mul.v
+    Info (12023): Found entity 1: mul
+Info (12021): Found 1 design units, including 1 entities, in source file kieu.v
+    Info (12023): Found entity 1: kieu
+Info (12021): Found 1 design units, including 1 entities, in source file kiemtra_chia.v
+    Info (12023): Found entity 1: kiemtra_chia
+Info (12021): Found 1 design units, including 1 entities, in source file huynh.v
+    Info (12023): Found entity 1: huynh
+Info (12021): Found 1 design units, including 1 entities, in source file henxui.v
+    Info (12023): Found entity 1: henxui
+Info (12021): Found 1 design units, including 1 entities, in source file ex_mul.v
+    Info (12023): Found entity 1: ex_mul
+Info (12021): Found 1 design units, including 1 entities, in source file divisor.v
+    Info (12023): Found entity 1: divisor
+Info (12021): Found 1 design units, including 1 entities, in source file ct_div_test22.v
+    Info (12023): Found entity 1: ct_div_test22
+Info (12021): Found 1 design units, including 1 entities, in source file ct_div_test.v
+    Info (12023): Found entity 1: ct_div_test
+Info (12021): Found 1 design units, including 1 entities, in source file ct_div2.v
+    Info (12023): Found entity 1: ct_div2
+Info (12021): Found 1 design units, including 1 entities, in source file converter.v
+    Info (12023): Found entity 1: converter
+Info (12021): Found 1 design units, including 1 entities, in source file control_test22.v
+    Info (12023): Found entity 1: control_test22
+Info (12021): Found 1 design units, including 1 entities, in source file control_div.v
+    Info (12023): Found entity 1: control_div
+Info (12021): Found 1 design units, including 1 entities, in source file cong_32bit.v
+    Info (12023): Found entity 1: cong_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file chia.v
+    Info (12023): Found entity 1: chia
+Info (12021): Found 1 design units, including 1 entities, in source file cchia.v
+    Info (12023): Found entity 1: cchia
+Info (12021): Found 1 design units, including 1 entities, in source file big_alu.v
+    Info (12023): Found entity 1: big_alu
+Info (12021): Found 1 design units, including 1 entities, in source file array.v
+    Info (12023): Found entity 1: array
+Info (12021): Found 1 design units, including 1 entities, in source file all.v
+    Info (12023): Found entity 1: all
+Info (12021): Found 1 design units, including 1 entities, in source file additon.v
+    Info (12023): Found entity 1: additon
+Info (12021): Found 1 design units, including 1 entities, in source file converterrgb.v
+    Info (12023): Found entity 1: converterRGB
+Info (12127): Elaborating entity "mulFP" for the top level hierarchy
+Info (12128): Elaborating entity "mul23bits2" for hierarchy "mul23bits2:m23bis_ins"
+Info (12128): Elaborating entity "multiplicand" for hierarchy "mul23bits2:m23bis_ins|multiplicand:md_inst"
+Info (12128): Elaborating entity "register_64bits" for hierarchy "mul23bits2:m23bis_ins|multiplicand:md_inst|register_64bits:reg64_inst"
+Info (12128): Elaborating entity "multiplier" for hierarchy "mul23bits2:m23bis_ins|multiplier:mr_inst"
+Info (12128): Elaborating entity "register_32bits" for hierarchy "mul23bits2:m23bis_ins|multiplier:mr_inst|register_32bits:reg32_inst"
+Info (12128): Elaborating entity "control_test22" for hierarchy "mul23bits2:m23bis_ins|control_test22:cwt"
+Info (10264): Verilog HDL Case Statement information at control_test22.v(56): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "ex_mul" for hierarchy "ex_mul:hhhhjkf"
+Info (12128): Elaborating entity "pls" for hierarchy "pls:pl_ins1t"
+Warning (10230): Verilog HDL assignment warning at pls.v(13): truncated value with size 32 to match size of target (5)
+Warning (10240): Verilog HDL Always Construct warning at pls.v(10): inferring latch(es) for variable "count", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "count[0]" at pls.v(12)
+Info (10041): Inferred latch for "count[1]" at pls.v(12)
+Info (10041): Inferred latch for "count[2]" at pls.v(12)
+Info (10041): Inferred latch for "count[3]" at pls.v(12)
+Info (10041): Inferred latch for "count[4]" at pls.v(12)
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17049): 37 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 842 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 66 input pins
+    Info (21059): Implemented 81 output pins
+    Info (21061): Implemented 695 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4607 megabytes
+    Info: Processing ended: Mon Mar 15 16:45:56 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

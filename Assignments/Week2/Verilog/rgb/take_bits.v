@@ -1,0 +1,30 @@
+module take_bits (in, out);
+input [45:0] in;
+output [22:0] out;
+
+wire [22:0] out, out_temp1,out_temp2,out_temp3,out_temp4,out_temp5,out_temp6,out_temp7,out_temp8,out_temp9,out_temp10,out_temp11,out_temp12, out_temp13, out_temp14, out_temp15, out_temp16, out_temp17, out_temp18, out_temp19, out_temp20, out_temp21, out_temp22, out_temp23;
+assign out = (in[45] == 1) ? in[45:23] : out_temp1;
+assign out_temp1 = (in[44] == 1) ? in[44:22] : out_temp2;
+assign out_temp2 = (in[43] == 1) ? in[43:21] : out_temp3;
+assign out_temp3 = (in[42] == 1) ? in[42:20] : out_temp4;
+assign out_temp4 = (in[41] == 1) ? in[41:19] : out_temp5;
+assign out_temp5 = (in[40] == 1) ? in[40:18] : out_temp6;
+assign out_temp6 = (in[39] == 1) ? in[39:17] : out_temp7;
+assign out_temp7 = (in[38] == 1) ? in[38:16] : out_temp8;
+assign out_temp8 = (in[37] == 1) ? in[37:15] : out_temp9;
+assign out_temp9 = (in[36] == 1) ? in[36:14] : out_temp10;
+assign out_temp10 = (in[35] == 1) ? in[35:13] : out_temp11;
+assign out_temp11 = (in[34] == 1) ? in[34:13] : out_temp12;
+assign out_temp12 = (in[33] == 1) ? in[33:12] : out_temp13;
+assign out_temp13 = (in[32] == 1) ? in[32:10] : out_temp14;
+assign out_temp14 = (in[31] == 1) ? in[31:9] : out_temp15;
+assign out_temp15 = (in[30] == 1) ? in[30:8] : out_temp16;
+assign out_temp16 = (in[29] == 1) ? in[29:7] : out_temp17;
+assign out_temp17 = (in[28] == 1) ? in[28:6] : out_temp18;
+assign out_temp18 = (in[27] == 1) ? in[27:5] : out_temp19;
+assign out_temp19 = (in[26] == 1) ? in[26:4] : out_temp20;
+assign out_temp20 = (in[25] == 1) ? in[25:3] : out_temp21;
+assign out_temp21 = (in[24] == 1) ? in[24:2] : out_temp22;
+assign out_temp22 = (in[23] == 1) ? in[23:1] : out_temp23;
+assign out_temp23 = (in[22] == 1) ? in[22:0] : 23'b0;
+endmodule

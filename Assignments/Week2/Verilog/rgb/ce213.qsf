@@ -1,0 +1,133 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 18:49:06  December 15, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ce213_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE Auto
+set_global_assignment -name TOP_LEVEL_ENTITY henxui
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:49:06  DECEMBER 15, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE kieu.v
+set_global_assignment -name VERILOG_FILE test_string.v
+set_global_assignment -name VERILOG_FILE test_exponent.v
+set_global_assignment -name VERILOG_FILE test_ex.v
+set_global_assignment -name VERILOG_FILE test_addition2.v
+set_global_assignment -name VERILOG_FILE test_addition.v
+set_global_assignment -name VERILOG_FILE take_bits2.v
+set_global_assignment -name VERILOG_FILE take_bits.v
+set_global_assignment -name VERILOG_FILE sum_first.v
+set_global_assignment -name VERILOG_FILE state_machine.v
+set_global_assignment -name VERILOG_FILE small_alu.v
+set_global_assignment -name VERILOG_FILE register_100bits.v
+set_global_assignment -name VERILOG_FILE register_64bits.v
+set_global_assignment -name VERILOG_FILE register_50bits.v
+set_global_assignment -name VERILOG_FILE register_32bits.v
+set_global_assignment -name VERILOG_FILE register_24bits.v
+set_global_assignment -name VERILOG_FILE quotient.v
+set_global_assignment -name VERILOG_FILE pls22.v
+set_global_assignment -name VERILOG_FILE pls.v
+set_global_assignment -name VERILOG_FILE part3_addition.v
+set_global_assignment -name VERILOG_FILE part2_ExAndF.v
+set_global_assignment -name VERILOG_FILE part2_control.v
+set_global_assignment -name VERILOG_FILE multiplier_q50.v
+set_global_assignment -name VERILOG_FILE multiplier_q24.v
+set_global_assignment -name VERILOG_FILE multiplier_q.v
+set_global_assignment -name VERILOG_FILE multiplier.v
+set_global_assignment -name VERILOG_FILE multiplicand_d100.v
+set_global_assignment -name VERILOG_FILE multiplicand_d.v
+set_global_assignment -name VERILOG_FILE multiplicand.v
+set_global_assignment -name VERILOG_FILE mulFP.v
+set_global_assignment -name VERILOG_FILE mul23bits2.v
+set_global_assignment -name VERILOG_FILE mul23bits.v
+set_global_assignment -name VERILOG_FILE mul.v
+set_global_assignment -name VERILOG_FILE ex_mul.v
+set_global_assignment -name VERILOG_FILE divisor.v
+set_global_assignment -name VERILOG_FILE ct_div2.v
+set_global_assignment -name VERILOG_FILE ct_div_test22.v
+set_global_assignment -name VERILOG_FILE ct_div_test.v
+set_global_assignment -name VERILOG_FILE converter.v
+set_global_assignment -name VERILOG_FILE control_test22.v
+set_global_assignment -name VERILOG_FILE control_div.v
+set_global_assignment -name VERILOG_FILE chia.v
+set_global_assignment -name VERILOG_FILE big_alu.v
+set_global_assignment -name VERILOG_FILE array.v
+set_global_assignment -name VERILOG_FILE all.v
+set_global_assignment -name VERILOG_FILE additon.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE s.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform3.vwf
+set_global_assignment -name VERILOG_FILE kiemtra_chia.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform4.vwf
+set_global_assignment -name VERILOG_FILE state_machine222.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform9.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VERILOG_FILE cchia.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
+set_global_assignment -name VERILOG_FILE huynh.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform12.vwf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13.vwf
+set_global_assignment -name VERILOG_FILE sm_extra_1.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
+set_global_assignment -name VERILOG_FILE sm_extra_2.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform15.vwf
+set_global_assignment -name VERILOG_FILE henxui.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform16.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform17.vwf
+set_global_assignment -name VERILOG_FILE cong_32bit.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "D:/verilog/truongthinh3/Waveform16.vwf"

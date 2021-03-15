@@ -1,0 +1,15 @@
+
+State Machine - |mulFP|mul23bits2:m23bis_ins|state
+Name state.00 state.10 state.01 
+state.00 0 0 0 
+state.01 1 0 1 
+state.10 1 1 0 
+
+State Machine - |mulFP|mul23bits2:m23bis_ins|control_test22:cwt|state
+Name state.write state.sr state.sl state.no_add state.add state.reset 
+state.reset 0 0 0 0 0 0 
+state.add 0 0 0 0 1 1 
+state.no_add 0 0 0 1 0 1 
+state.sl 0 0 1 0 0 1 
+state.sr 0 1 0 0 0 1 
+state.write 1 0 0 0 0 1 
