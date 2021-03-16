@@ -1,7 +1,7 @@
 import numpy as np
 import cv2 as cv
 
-image = np.zeros((32, 32, 3), np.uint8)
+image = np.zeros((500, 500, 3), np.uint8)
 
 f1 = open('bitmapblue.txt', 'r')
 f2 = open('bitmapgreen.txt', 'r')
@@ -22,8 +22,8 @@ i = 0
 j = 0
 k = 0
 
-for i in range(32):
-    for j in range(32):
+for i in range(500):
+    for j in range(500):
         image[i, j] = (pixelsb[k], pixelsg[k], pixelsr[k])
         k = k + 1
 
