@@ -13,9 +13,9 @@ opf2 = open('bitmapgreen.txt','w')
 opf3 = open('bitmapblue.txt','w')
 for i in range(img_height):
     for j in range(img_width):
-        r = img[i, j][2]
-        g = img[i, j][1]
-        b = img[i, j][0] 
+        r = img[i,j][2]
+        g = img[i,j][1]
+        b = img[i,j][0] 
 
         print(bin(r)[2:].zfill(8),bin(g)[2:].zfill(8),bin(b)[2:].zfill(8))
         opf1.write(bin(r)[2:].zfill(8))
