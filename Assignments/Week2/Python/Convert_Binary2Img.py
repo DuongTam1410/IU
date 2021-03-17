@@ -1,6 +1,10 @@
 import numpy as np
 import cv2 as cv
 
+def rgb2gray(r,g,b):
+    gray = (0.2989*r + 0.5870*g + 0.1140*b) / 255
+    return gray
+
 image = np.zeros((500, 500, 3), np.uint8)
 
 f1 = open('bitmapblue.txt', 'r')
@@ -29,8 +33,10 @@ for i in range(500):
 
 # Write image
 cv.imwrite('vel_moi.jpg', image)
-img_gray = cv.cvtColor(image,cv.COLOR_BGR2GRAY)
-cv.imshow('Vel',img_gray)
+cv.imshow('Mau',image)
+b,g,r = cv.split(image)
+img_gray = rgb2gray(r, g, b)
+cv.imshow('Gray',img_gray)
 cv.waitKey()
 cv.destroyAllWindows()
 f1.close()
