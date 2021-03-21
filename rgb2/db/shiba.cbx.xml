@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="shiba">
-		<CBX_INST_ENTRY INSTANCE_NAME="|mul_float|Multiplication_24bit:m1|lpm_mult:Mult0" CBX_FILE_NAME="mult_p8t.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
