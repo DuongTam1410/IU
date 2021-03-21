@@ -8,7 +8,7 @@ pp = 500
 image1 = np.zeros((pp, pp, 3), np.uint8)
 image2 = np.zeros((pp, pp, 3), np.uint8)
 
-f1 = open('verilog.txt', 'r')
+f1 = open('Verilog.txt', 'r')
 f2 = open('Python.txt','r')
 Compare = open('Compare.txt','w')
 
