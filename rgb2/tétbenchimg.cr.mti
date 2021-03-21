@@ -1,0 +1,102 @@
+D:/TKvimach1/rgb2/register.v {1 {vlog -work work {D:\TKvimach1\rgb2\register.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} D:/TKvimach1/rgb2/kk.v {1 {vlog -work work D:/TKvimach1/rgb2/kk.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+
+} {} {}} D:/TKvimach1/rgb2/IMEMG.v {1 {vlog -work work D:/TKvimach1/rgb2/IMEMG.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IMEMG
+
+Top level modules:
+	IMEMG
+
+} {} {}} D:/TKvimach1/rgb2/cong_32bit.v {1 {vlog -work work D:/TKvimach1/rgb2/cong_32bit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module cong_32bit
+
+Top level modules:
+	cong_32bit
+
+} {} {}} D:/TKvimach1/rgb2/Multiplication_24bit.v {1 {vlog -work work {D:\TKvimach1\rgb2\Multiplication_24bit.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Multiplication_24bit
+
+Top level modules:
+	Multiplication_24bit
+
+} {} {}} D:/TKvimach1/rgb2/all2.v {1 {vlog -work work D:/TKvimach1/rgb2/all2.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module all2
+
+Top level modules:
+	all2
+
+} {} {}} D:/TKvimach1/rgb2/adder8bit.v {1 {vlog -work work D:/TKvimach1/rgb2/adder8bit.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module adder8bit
+
+Top level modules:
+	adder8bit
+
+} {} {}} D:/TKvimach1/rgb2/tbb.v {1 {vlog -work work D:/TKvimach1/rgb2/tbb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tbb
+
+Top level modules:
+	tbb
+
+} {} {}} D:/TKvimach1/rgb2/testbench.v {1 {vlog -work work D:/TKvimach1/rgb2/testbench.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} D:/TKvimach1/rgb2/IMEM.v {1 {vlog -work work D:/TKvimach1/rgb2/IMEM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IMEM
+
+Top level modules:
+	IMEM
+
+} {} {}} D:/TKvimach1/rgb2/all.v {1 {vlog -work work {D:\TKvimach1\rgb2\all.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module all
+
+Top level modules:
+	all
+
+} {} {}} D:/TKvimach1/rgb2/IMEMR.v {1 {vlog -work work D:/TKvimach1/rgb2/IMEMR.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IMEMR
+
+Top level modules:
+	IMEMR
+
+} {} {}} D:/TKvimach1/rgb2/IMEMB.v {1 {vlog -work work D:/TKvimach1/rgb2/IMEMB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IMEMB
+
+Top level modules:
+	IMEMB
+
+} {} {}} D:/TKvimach1/rgb2/int_to_float.v {1 {vlog -work work D:/TKvimach1/rgb2/int_to_float.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module int_to_float
+
+Top level modules:
+	int_to_float
+
+} {} {}} D:/TKvimach1/rgb2/mul_float.v {1 {vlog -work work D:/TKvimach1/rgb2/mul_float.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mul_float
+
+Top level modules:
+	mul_float
+
+} {} {}}
