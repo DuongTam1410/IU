@@ -1,0 +1,4 @@
+module kk (in);
+input [31:0] in;
+assign  $fopen("inaa") = in;
+endmodule
