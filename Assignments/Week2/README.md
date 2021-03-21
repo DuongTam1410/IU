@@ -19,7 +19,8 @@ RGB Image
 
 ![asdsad](Python/velkoz_color.jpg)
 
-## 5. Results
+## Results
+- Largest error is 0.0254974365234375
 - Verilog 
 
 ![Verilog](Python/Verilog.jpg)
