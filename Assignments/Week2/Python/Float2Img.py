@@ -14,7 +14,7 @@ def float_to_bin(num):
 
 image = np.zeros((500, 500, 3), np.uint8)
 
-f1 = open('iredfloat.txt', 'r')
+f1 = open('duongtam/Documents/GitHub/IU/Assignments/Week2/Dataset/Image/iredfloat.txt', 'r')
 f2 = open('igreenfloat.txt', 'r')
 f3 = open('ibluefloat.txt', 'r')
 f4 = open('Python.txt','w')
