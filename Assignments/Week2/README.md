@@ -28,3 +28,5 @@ RGB Image
 - Python
 
 ![Python](Python/Python.jpg)
+
+![Verilog](Python/lalal.png)
