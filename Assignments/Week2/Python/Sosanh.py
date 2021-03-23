@@ -4,30 +4,36 @@ import cv2 as cv
 
 def bin_to_float(binary):
     return struct.unpack('!f', struct.pack('!I', int(binary, 2)))[0]
+
+with open("fullex/Verilog.txt", "r") as f:
+    lines = f.readlines()
+with open("fullex/Verilog.txt", "w") as f:
+    for line in lines:
+        if line.strip("\n") != "x0000000000000000000000000000000":
+            f.write(line)
+f.close()
+
 pp = 500
 image1 = np.zeros((pp, pp, 3), np.uint8)
 image2 = np.zeros((pp, pp, 3), np.uint8)
 
-f1 = open('Verilog.txt', 'r')
-f2 = open('Python.txt','r')
-Compare = open('Compare.txt','w')
+f1 = open("fullex/Verilog.txt", "r")
+f2 = open("Python.txt","r")
+Compare = open("Compare.txt","w")
 
 pixelsverilog = []
 pixelspython = []
-count = 0
-sum = 0
-max = 0
-min =  float('inf')
 
 for x1 in f1:
-    pixelsverilog.append(bin_to_float(x1))
+    pixelsverilog.append(bin_to_float(x1)*255)
 for x2 in f2:
     pixelspython.append(bin_to_float(x2))
 
 i = 0
 j = 0
 k = 0
-
+max = 0
+ 
 for i in range(pp):
     for j in range(pp):
         image1[i, j] = (pixelsverilog[k], pixelsverilog[k], pixelsverilog[k])

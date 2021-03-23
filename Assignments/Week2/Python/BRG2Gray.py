@@ -2,8 +2,8 @@ import cv2 as cv
 import numpy as np
 
 #Read and show image
-img = cv.imread('Velkoz.jpg')
-cv.imshow("Ảnh màu",img)
+img = cv.imread('iu.jpg')
+cv.imshow("Anhmau",img)
 cv.waitKey()
 
 #Convert BGR to Gray

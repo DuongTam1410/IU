@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.07, Jul 22 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python
+vadder8bit
+Z0 !s110 1616485863
+!i10b 1
+!s100 fKzMf]T52`AGENT?H`VCO2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<lz97@`G3Dj^OEI]DNlIK2
+Z2 d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex
+Z3 w1616315318
+8adder8bit.v
+Fadder8bit.v
+!i122 27
+L0 1 103
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OV;L;2020.3;71
+r1
+!s85 0
+31
+Z6 !s108 1616485862.000000
+!s107 tbb5.v|mul_float.v|cong_32bit.v|all3.v|adder8bit.v|Multiplication_24bit.v|
+Z7 !s90 -reportprogress|300|-work|work|Multiplication_24bit.v|adder8bit.v|all3.v|cong_32bit.v|mul_float.v|tbb5.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+vall3
+R0
+!i10b 1
+!s100 =Azzzlj8=zb`YCAj@5QSg2
+R1
+IE?WzHJ<A`1AaBGU]FAN5J0
+R2
+w1616336850
+8all3.v
+Fall3.v
+!i122 27
+L0 1 14
+R4
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 tbb5.v|mul_float.v|cong_32bit.v|all3.v|adder8bit.v|Multiplication_24bit.v|
+R7
+!i113 1
+R8
+R9
+vcong_32bit
+R0
+!i10b 1
+!s100 ^[K4DRjI=SdSOB_S23ARQ1
+R1
+I<X]NG3WALbVJLX^2568dK3
+R2
+R3
+8cong_32bit.v
+Fcong_32bit.v
+!i122 27
+L0 1 204
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vmul_float
+R0
+!i10b 1
+!s100 P]2PeEPIQYmb:m<fNTEFA2
+R1
+I`mOEd0`ja`I_OXVPfa>891
+R2
+R3
+8mul_float.v
+Fmul_float.v
+!i122 27
+L0 1 20
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vMultiplication_24bit
+R0
+!i10b 1
+!s100 9^Q9dAgM8PP]_0Uk?@3]k3
+R1
+IRFdcIF;]DTLY?B;ImYhXI1
+R2
+R3
+8Multiplication_24bit.v
+FMultiplication_24bit.v
+!i122 27
+L0 1 160
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+n@multiplication_24bit
+vtbb5
+R0
+!i10b 1
+!s100 Q_Jg0nCjTFR8aozknb9X>0
+R1
+IIXHcM@HZNRUXkVmZGm1Y53
+R2
+w1616484078
+8tbb5.v
+Ftbb5.v
+!i122 27
+L0 1 27
+R4
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9

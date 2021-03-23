@@ -29,7 +29,7 @@ for x1 in f3:
 for x2 in f2:
     pixelsg.append(int(bin_to_float(x2)*255))
 for x3 in f1:
-    pixelsr.append((bin_to_float(x3)*255))
+    pixelsr.append(int(bin_to_float(x3)*255))
 
 i = 0
 j = 0
@@ -43,7 +43,7 @@ for i in range(500):
 
 # Write image
 cv.imwrite('GrayPython.jpg', image)
-cv.imshow('GrayPython',image)
+#cv.imshow('GrayPython',image)
 cv.waitKey()
 cv.destroyAllWindows()
 f1.close()

@@ -1,0 +1,205 @@
+# Loading project tb
+ls
+# adder8bit.v
+# all3.v
+# cong_32bit.v
+# ibluefloat3.txt
+# ibluefloat.txt
+# igreenfloat2.txt
+# igreenfloat.txt
+# Imgblue2.txt
+# Imgblue.txt
+# Imggreen2.txt
+# Imggreen.txt
+# Imgred2.txt
+# Imgred.txt
+# iredfloat.txt
+# mul_float.v
+# Multiplication_24bit.v
+# README.md
+# run.do
+# tbb5.v
+# tb.cr.mti
+# tb.mpf
+# transcript
+# Verilog.txt
+# vsim.wlf
+# work
+do run.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 14:47:38 on Mar 23,2021
+# vlog -reportprogress 300 -work work Multiplication_24bit.v adder8bit.v all3.v cong_32bit.v mul_float.v tbb5.v 
+# -- Compiling module Multiplication_24bit
+# -- Compiling module adder8bit
+# -- Compiling module all3
+# -- Compiling module cong_32bit
+# -- Compiling module mul_float
+# -- Compiling module tbb5
+# 
+# Top level modules:
+# 	tbb5
+# End time: 14:47:38 on Mar 23,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.tbb5 
+# Start time: 14:47:38 on Mar 23,2021
+# Loading work.tbb5
+# Loading work.all3
+# Loading work.mul_float
+# Loading work.adder8bit
+# Loading work.Multiplication_24bit
+# Loading work.cong_32bit
+# ** Note: $finish    : tbb5.v(24)
+#    Time: 20000090 ps  Iteration: 0  Instance: /tbb5
+# 1
+# Break in Module tbb5 at tbb5.v line 24
+quit -sim
+# End time: 14:48:35 on Mar 23,2021, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+ls
+# adder8bit.v
+# all3.v
+# cong_32bit.v
+# ibluefloat3.txt
+# ibluefloat.txt
+# igreenfloat2.txt
+# igreenfloat.txt
+# Imgblue2.txt
+# Imgblue.txt
+# Imggreen2.txt
+# Imggreen.txt
+# Imgred2.txt
+# Imgred.txt
+# iredfloat.txt
+# mul_float.v
+# Multiplication_24bit.v
+# README.md
+# run.do
+# tbb5.v
+# tb.cr.mti
+# tb.mpf
+# transcript
+# Verilog.txt
+# vsim.wlf
+# work
+ls
+# adder8bit.v
+# all3.v
+# cong_32bit.v
+# ibluefloat3.txt
+# ibluefloat.txt
+# igreenfloat2.txt
+# igreenfloat.txt
+# Imgblue2.txt
+# Imgblue.txt
+# Imggreen2.txt
+# Imggreen.txt
+# Imgred2.txt
+# Imgred.txt
+# iredfloat.txt
+# mul_float.v
+# Multiplication_24bit.v
+# README.md
+# run.do
+# tbb5.v
+# tb.cr.mti
+# tb.mpf
+# transcript
+# Verilog.txt
+# vsim.wlf
+# work
+do run.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
+# Start time: 14:51:02 on Mar 23,2021
+# vlog -reportprogress 300 -work work Multiplication_24bit.v adder8bit.v all3.v cong_32bit.v mul_float.v tbb5.v 
+# -- Compiling module Multiplication_24bit
+# -- Compiling module adder8bit
+# -- Compiling module all3
+# -- Compiling module cong_32bit
+# -- Compiling module mul_float
+# -- Compiling module tbb5
+# 
+# Top level modules:
+# 	tbb5
+# End time: 14:51:03 on Mar 23,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.tbb5 
+# Start time: 14:51:03 on Mar 23,2021
+# Loading work.tbb5
+# Loading work.all3
+# Loading work.mul_float
+# Loading work.adder8bit
+# Loading work.Multiplication_24bit
+# Loading work.cong_32bit
+# ** Note: $finish    : tbb5.v(24)
+#    Time: 20000090 ps  Iteration: 0  Instance: /tbb5
+# 1
+# Break in Module tbb5 at tbb5.v line 24
+quit -sim
+# End time: 14:51:58 on Mar 23,2021, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 1
+cd ..
+# reading /home/duongtam/intelFPGA_pro/20.4/modelsim_ase/linuxaloem/../modelsim.ini
+./run
+# Sai so lon nhat la: 0.025502562522888184
+ls
+# anhanh.py
+# Bin2Float.py
+# BRG2Gray.py
+# Compare.txt
+# Convert_Binary2Img.py
+# Convert_Img2Binary.py
+# Float2Img.py
+# fullex
+# fullexVerilog.txt
+# GrayPython.jpg
+# Grayvideo.py
+# ibluefloat.txt
+# igreenfloat.txt
+# iredfloat.txt
+# iu.jpg
+# lalal.png
+# Python.jpg
+# Python.txt
+# README.md
+# replace.py
+# run
+# Sosanh.py
+# spider.mp4
+# test.py
+# translateimg.py
+# velkoz_color.jpg
+# velkoz_gray.jpg
+# vel_moi.jpg
+# Verilog.jpg
+# videocutter.mp4
+# video.mp4
+# videothuan.py
+cd fullex
+ls
+# adder8bit.v
+# all3.v
+# cong_32bit.v
+# ibluefloat3.txt
+# ibluefloat.txt
+# igreenfloat2.txt
+# igreenfloat.txt
+# Imgblue2.txt
+# Imgblue.txt
+# Imggreen2.txt
+# Imggreen.txt
+# Imgred2.txt
+# Imgred.txt
+# iredfloat.txt
+# mul_float.v
+# Multiplication_24bit.v
+# README.md
+# run.do
+# tbb5.v
+# tb.cr.mti
+# tb.mpf
+# transcript
+# Verilog.txt
+# vsim.wlf
+# work
+vsim all3.v
+# OpenFile all3.v
