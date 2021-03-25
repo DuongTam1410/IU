@@ -17,16 +17,23 @@
 ## • Simulate and compare between two method
 RGB Image 
 
-![asdsad](Python/velkoz_color.jpg)
+![](Python/Dataset/Image/velkoz_color.jpg)
 
 ## Results
 - Largest error is 0.0254974365234375
 - Verilog 
 
-![Verilog](Python/Verilog.jpg)
+![](Python/Dataset/Image/Verilog.jpg)
+
 
 - Python
 
-![Python](Python/Python.jpg)
+![](Python/Dataset/Image/Python.jpg)
 
-![Verilog](Python/lalal.png)
+- 
+
+
+![](Python/Dataset/Image/lalal.png)
+
+
+
