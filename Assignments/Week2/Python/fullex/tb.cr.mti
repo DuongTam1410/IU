@@ -19,13 +19,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 
 Top level modules:
 	all3
 
-} {} {}} /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v {1 {vlog -work work -stats=none /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
--- Compiling module tbb5
-
-Top level modules:
-	tbb5
-
 } {} {}} /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v {1 {vlog -work work -stats=none /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.3 Compiler 2020.07 Jul 22 2020
 -- Compiling module Multiplication_24bit

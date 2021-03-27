@@ -19,7 +19,7 @@ image2 = np.zeros((pp, pp, 3), np.uint8)
 
 f1 = open("fullex/Verilog.txt", "r")
 f2 = open("Dataset/Text/Python.txt","r")
-Compare = open("Compare.txt","w")
+Compare = open("Dataset/Text/Compare.txt","w")
 
 pixelsverilog = []
 pixelspython = []
@@ -45,10 +45,10 @@ for i in range(pp):
 
 # Write image
 print('Sai so lon nhat la:',max)
-cv.imwrite('Verilog.jpg', image1)
-cv.imshow('Verilog',image1)
-cv.imwrite('Python.jpg', image2)
-cv.imshow('Python',image2)
+cv.imwrite('Dataset/Image_Vid/Verilog.jpg', image1)
+cv.imshow('Dataset/Image_Vid/Verilog',image1)
+cv.imwrite('Dataset/Image_Vid/Python.jpg', image2)
+cv.imshow('Dataset/Image_Vid/Python',image2)
 cv.waitKey()
 cv.destroyAllWindows()
 f1.close()

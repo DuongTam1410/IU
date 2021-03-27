@@ -8,41 +8,41 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex
+d/home/duongtam/intelFPGA_pro/20.4/modelsim_ase/linuxaloem
 vadder8bit
-Z1 !s110 1616824696
+Z0 !s110 1616834106
 !i10b 1
 !s100 fKzMf]T52`AGENT?H`VCO2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IgEdQikW6HTz^Y1Z6lXmDJ1
-R0
+Z2 d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex
 Z3 w1616315318
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v
-!i122 0
+!i122 6
 L0 1 103
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OV;L;2020.3;71
 r1
 !s85 0
 31
-Z6 !s108 1616824696.000000
+Z6 !s108 1616834106.000000
 !s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v|
 !i113 1
 Z7 o-work work
 Z8 tCvgOpt 0
 vall3
-R1
+R0
 !i10b 1
 !s100 =Azzzlj8=zb`YCAj@5QSg2
-R2
+R1
 IVAMVHjiIS0`i=HF3dP4BL0
-R0
+R2
 w1616336850
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v
-!i122 1
+!i122 7
 L0 1 14
 R4
 R5
@@ -56,16 +56,16 @@ R6
 R7
 R8
 vcong_32bit
-R1
+R0
 !i10b 1
 !s100 ^[K4DRjI=SdSOB_S23ARQ1
-R2
+R1
 I`KZOz?14HV;CI31L7Jgo@1
-R0
+R2
 R3
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v
-!i122 2
+!i122 8
 L0 1 204
 R4
 R5
@@ -79,16 +79,16 @@ R6
 R7
 R8
 vmul_float
-R1
+R0
 !i10b 1
 !s100 P]2PeEPIQYmb:m<fNTEFA2
-R2
+R1
 IBTTGciZkdcBeFA@=MObTQ3
-R0
+R2
 R3
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v
-!i122 3
+!i122 9
 L0 1 20
 R4
 R5
@@ -102,16 +102,16 @@ R6
 R7
 R8
 vMultiplication_24bit
-R1
+R0
 !i10b 1
 !s100 9^Q9dAgM8PP]_0Uk?@3]k3
-R2
+R1
 IGd:g^H4I[O]Nd2HCMU7<`0
-R0
+R2
 R3
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v
-!i122 4
+!i122 10
 L0 1 160
 R4
 R5
@@ -126,16 +126,16 @@ R7
 R8
 n@multiplication_24bit
 vtbb5
-R1
-!i10b 1
-!s100 2C7o3_CkMez^df]=USb9b2
-R2
-I8EM??ENB2Rd8NWHDdLhNF0
 R0
-w1616397456
+!i10b 1
+!s100 Q_Jg0nCjTFR8aozknb9X>0
+R1
+IhiN[U>gRhYzz0cB1[LIhl2
+R2
+w1616834095
 8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v
 F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v
-!i122 5
+!i122 11
 L0 1 27
 R4
 R5

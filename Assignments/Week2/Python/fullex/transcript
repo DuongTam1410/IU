@@ -1,9 +1,14 @@
-# Loading project lala
-do wave.do
-do wave.do
+# Loading project tb
+# Compile of adder8bit.v was successful.
+# Compile of all3.v was successful.
+# Compile of cong_32bit.v was successful.
+# Compile of mul_float.v was successful.
+# Compile of Multiplication_24bit.v was successful.
+# Compile of tbb5.v was successful.
+# 6 compiles, 0 failed with no errors.
 vsim work.tbb5
 # vsim work.tbb5 
-# Start time: 13:23:15 on Mar 27,2021
+# Start time: 15:33:12 on Mar 27,2021
 # Loading work.tbb5
 # Loading work.all3
 # Loading work.mul_float
@@ -12,15 +17,44 @@ vsim work.tbb5
 # Loading work.cong_32bit
 add wave -position insertpoint sim:/tbb5/*
 run -all
+# ** Warning: (vsim-7) Failed to open readmem file "Dataset/Text/iredfloat.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(11)
+#    Time: 0 ps  Iteration: 0  Instance: /tbb5
+# ** Warning: (vsim-7) Failed to open readmem file "Dataset/Text/igreenfloat.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(12)
+#    Time: 0 ps  Iteration: 0  Instance: /tbb5
+# ** Warning: (vsim-7) Failed to open readmem file "Dataset/Text/ibluefloat.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(13)
+#    Time: 0 ps  Iteration: 0  Instance: /tbb5
+# ** Warning: (vsim-3533) [FOFIW] - Failed to open file "Dataset/Text/Verilog.txt" for writing.
+# No such file or directory. (errno = ENOENT)    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(14)
+#    Time: 0 ps  Iteration: 0  Instance: /tbb5
 # ** Note: $finish    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(24)
 #    Time: 20000090 ps  Iteration: 0  Instance: /tbb5
 # 1
 # Break in Module tbb5 at /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v line 24
-coverage report -output /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/report.txt -srcfile=* -detail -all -dump -annotate -option -assert -directive -cvg -pa -codeAll
-# ** Warning: (vsim-17210) '-instance' mode is required, overriding previous specification.
-# ** Note: (vsim-17388) No matching coverage data found.
-do /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/wave.do
-dataset reload -f {}
-# too many nested evaluations (infinite loop?)
-do /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/wave.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/wave.do
+# Compile of adder8bit.v was successful.
+# Compile of all3.v was successful.
+# Compile of cong_32bit.v was successful.
+# Compile of mul_float.v was successful.
+# Compile of Multiplication_24bit.v was successful.
+# Compile of tbb5.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.tbb5
+# End time: 15:35:13 on Mar 27,2021, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 10
+# vsim work.tbb5 
+# Start time: 15:35:13 on Mar 27,2021
+# Loading work.tbb5
+# Loading work.all3
+# Loading work.mul_float
+# Loading work.adder8bit
+# Loading work.Multiplication_24bit
+# Loading work.cong_32bit
+add wave -position insertpoint sim:/tbb5/*
+# Load canceled
+run -all
+# ** Note: $finish    : /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v(24)
+#    Time: 20000090 ps  Iteration: 0  Instance: /tbb5
+# 1
+# Break in Module tbb5 at /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v line 24
