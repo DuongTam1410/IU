@@ -42,8 +42,8 @@ for i in range(500):
         k = k + 1
 
 # Write image
-cv.imwrite('GrayPython.jpg', image)
-cv.imshow('GrayPython',image)
+cv.imwrite('Dataset/Image_Vid/GrayPython.jpg', image)
+#cv.imshow('GrayPython',image)
 cv.waitKey()
 cv.destroyAllWindows()
 f1.close()
