@@ -5,7 +5,7 @@ def rgb2gray(r,g,b):
     gray = (0.2989*r + 0.5870*g + 0.1140*b) / 255
     return gray
 
-cap = cv2.VideoCapture('videocutter.mp4')
+cap = cv2.VideoCapture('Dataset/Image/videocutter.mp4')
 
 while(cap.isOpened()):
   # Capture frame-by-frame
@@ -24,3 +24,19 @@ while(cap.isOpened()):
     break
 cap.release()
 cv2.destroyAllWindows()
+
+"""
+vidcap = cv2.VideoCapture("Dataset/Image/videocutter.mp4")
+success, image = vidcap.read()
+count = 0
+
+while success:
+    height, width, layers = image.shape
+    new_h = height // 2
+    new_w = width // 2
+    resize = cv2.resize(image, (new_w, new_h))
+    cv2.imwrite("%lalalal.jpg" % count, resize)
+    success, image = vidcap.read()
+    count += 1
+vidcap.release()
+cv2.destroyAllWindows()"""

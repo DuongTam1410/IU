@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy
 import struct
 
-img = cv.imread('velkoz_color.jpg')
+img = cv.imread('Dataset/Image/velkoz_color.jpg')
 img_width = img.shape[0]
 img_height = img.shape[1]
 
@@ -14,9 +14,9 @@ i = 0
 j = 0
 k = 0
 
-opf1 = open('iredfloat.txt','w')
-opf2 = open('igreenfloat.txt','w')
-opf3 = open('ibluefloat.txt','w')
+opf1 = open('fullex/iredfloat.txt','w')
+opf2 = open('fullex/igreenfloat.txt','w')
+opf3 = open('fullex/ibluefloat.txt','w')
 
 for i in range(img_height):
     for j in range(img_width):

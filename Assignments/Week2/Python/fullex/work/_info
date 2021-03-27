@@ -8,41 +8,41 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python
+Z0 d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex
 vadder8bit
-Z0 !s110 1616485863
+Z1 !s110 1616824696
 !i10b 1
 !s100 fKzMf]T52`AGENT?H`VCO2
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I<lz97@`G3Dj^OEI]DNlIK2
-Z2 d/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IgEdQikW6HTz^Y1Z6lXmDJ1
+R0
 Z3 w1616315318
-8adder8bit.v
-Fadder8bit.v
-!i122 27
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v
+!i122 0
 L0 1 103
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OV;L;2020.3;71
 r1
 !s85 0
 31
-Z6 !s108 1616485862.000000
-!s107 tbb5.v|mul_float.v|cong_32bit.v|all3.v|adder8bit.v|Multiplication_24bit.v|
-Z7 !s90 -reportprogress|300|-work|work|Multiplication_24bit.v|adder8bit.v|all3.v|cong_32bit.v|mul_float.v|tbb5.v|
+Z6 !s108 1616824696.000000
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/adder8bit.v|
 !i113 1
-Z8 o-work work
-Z9 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 vall3
-R0
+R1
 !i10b 1
 !s100 =Azzzlj8=zb`YCAj@5QSg2
-R1
-IE?WzHJ<A`1AaBGU]FAN5J0
 R2
+IVAMVHjiIS0`i=HF3dP4BL0
+R0
 w1616336850
-8all3.v
-Fall3.v
-!i122 27
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v
+!i122 1
 L0 1 14
 R4
 R5
@@ -50,22 +50,22 @@ r1
 !s85 0
 31
 R6
-Z10 !s107 tbb5.v|mul_float.v|cong_32bit.v|all3.v|adder8bit.v|Multiplication_24bit.v|
-R7
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/all3.v|
 !i113 1
+R7
 R8
-R9
 vcong_32bit
-R0
+R1
 !i10b 1
 !s100 ^[K4DRjI=SdSOB_S23ARQ1
-R1
-I<X]NG3WALbVJLX^2568dK3
 R2
+I`KZOz?14HV;CI31L7Jgo@1
+R0
 R3
-8cong_32bit.v
-Fcong_32bit.v
-!i122 27
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v
+!i122 2
 L0 1 204
 R4
 R5
@@ -73,22 +73,22 @@ r1
 !s85 0
 31
 R6
-R10
-R7
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/cong_32bit.v|
 !i113 1
+R7
 R8
-R9
 vmul_float
-R0
+R1
 !i10b 1
 !s100 P]2PeEPIQYmb:m<fNTEFA2
-R1
-I`mOEd0`ja`I_OXVPfa>891
 R2
+IBTTGciZkdcBeFA@=MObTQ3
+R0
 R3
-8mul_float.v
-Fmul_float.v
-!i122 27
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v
+!i122 3
 L0 1 20
 R4
 R5
@@ -96,22 +96,22 @@ r1
 !s85 0
 31
 R6
-R10
-R7
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/mul_float.v|
 !i113 1
+R7
 R8
-R9
 vMultiplication_24bit
-R0
+R1
 !i10b 1
 !s100 9^Q9dAgM8PP]_0Uk?@3]k3
-R1
-IRFdcIF;]DTLY?B;ImYhXI1
 R2
+IGd:g^H4I[O]Nd2HCMU7<`0
+R0
 R3
-8Multiplication_24bit.v
-FMultiplication_24bit.v
-!i122 27
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v
+!i122 4
 L0 1 160
 R4
 R5
@@ -119,23 +119,23 @@ r1
 !s85 0
 31
 R6
-R10
-R7
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/Multiplication_24bit.v|
 !i113 1
+R7
 R8
-R9
 n@multiplication_24bit
 vtbb5
-R0
-!i10b 1
-!s100 Q_Jg0nCjTFR8aozknb9X>0
 R1
-IIXHcM@HZNRUXkVmZGm1Y53
+!i10b 1
+!s100 2C7o3_CkMez^df]=USb9b2
 R2
-w1616484078
-8tbb5.v
-Ftbb5.v
-!i122 27
+I8EM??ENB2Rd8NWHDdLhNF0
+R0
+w1616397456
+8/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v
+F/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v
+!i122 5
 L0 1 27
 R4
 R5
@@ -143,8 +143,8 @@ r1
 !s85 0
 31
 R6
-R10
-R7
+!s107 /home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/duongtam/Documents/GitHub/IU/Assignments/Week2/Python/fullex/tbb5.v|
 !i113 1
+R7
 R8
-R9

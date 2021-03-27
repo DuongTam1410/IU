@@ -8,9 +8,9 @@ module tbb5 ();
    
   integer i;
 initial begin
-  $readmemb("iredfloat.txt", red);
-  $readmemb("igreenfloat.txt", green);
-  $readmemb("ibluefloat.txt", blue);
+  $readmemb("Imgred.txt", red);
+  $readmemb("Imggreen.txt", green);
+  $readmemb("Imgblue.txt", blue);
   Verilog = $fopen("Verilog.txt");
   #10;
 for (i = 0; i <= 500*500; i = i + 1 ) 
