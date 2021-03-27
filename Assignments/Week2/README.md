@@ -3,7 +3,7 @@
 #### [OpenCV: Color Conversions](https://docs.opencv.org/3.4/de/d25/imgproc_color_conversions.html)
 ## • Convert RGB to Gray
    ### Algorithm
-- RGB[A] to Grey: ```Y ← 0.299 × R + 0.587 × G + 0.114 × B```
+- RGB[A] to Gry: ```Y ← 0.299 × R + 0.587 × G + 0.114 × B```
 ### Using Python
 - Convert Img2Bianry
 - RGB to Gray
