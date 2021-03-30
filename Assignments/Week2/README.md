@@ -33,7 +33,7 @@ RGB Image
 - 
 
 
-![](Python/Dataset/Image_Vid/lalal.png)
+![](Python/Dataset/Image_Vid/data.jpg)
 
 
 
