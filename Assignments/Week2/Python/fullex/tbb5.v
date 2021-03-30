@@ -1,27 +1,42 @@
 module tbb5 ();
-  reg [31:0] r,g,b;
-  wire [31:0] out;
-  reg [31:0] red [500*500-1:0];
-  reg [31:0] green [500*500-1:0];
-  reg [31:0] blue [500*500-1:0];
-  reg [31:0] Verilog;
-   
+  parameter na = 500*500;
+  wire [31:0] out_c;
+  wire [31:0] do;
+  reg [7:0] r,g,b;
+  wire [7:0] out;
+  reg [7:0] red [na-1:0];
+  reg [7:0] green [na-1:0];
+  reg [7:0] blue [na-1:0];
+  reg [7:0] Verilog;
+  reg ivl = 1;
+  reg ovl = 1;
+  reg clk = 0;
   integer i;
 initial begin
-  $readmemb("iredfloat.txt", red);
-  $readmemb("igreenfloat.txt", green);
-  $readmemb("ibluefloat.txt", blue);
+  $readmemb("red8b.txt", red);
+  $readmemb("green8b.txt", green);
+  $readmemb("blue8b.txt", blue);
   Verilog = $fopen("Verilog.txt");
-  #10;
-for (i = 0; i <= 500*500; i = i + 1 ) 
-  begin
+#6;
+for ( i = 0; i <= na; i= i + 1) 
+   begin
     r = red[i];
     g = green[i];
     b = blue [i];
-    $fdisplay(Verilog,"%b",out);
-    #80;
+    $fdisplay(Verilog,"%d",out);
+    #60;
   end
   $finish;
 end
-all3 haha2 (r, g, b, out);
+   always @ clk begin
+      #10 clk <= ~clk;
+   end
+   always @ivl begin
+      #15 ivl <= ~ivl;
+   end
+   always @ivl begin
+      #20 ovl <= ~ovl;
+   end
+
+all3 haha256 (ivl,clk,r,g,b, ovl, out, out_c,do);
 endmodule

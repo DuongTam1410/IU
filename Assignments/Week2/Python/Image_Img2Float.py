@@ -1,3 +1,4 @@
+ 
 import cv2 as cv
 import numpy
 import struct
@@ -13,9 +14,9 @@ i = 0
 j = 0
 k = 0
 
-opf1 = open('fullex/iredfloat.txt','w')
-opf2 = open('fullex/igreenfloat.txt','w')
-opf3 = open('fullex/ibluefloat.txt','w')
+opf1 = open('Dataset/Text/iredfloat.txt','w')
+opf2 = open('Dataset/Text/igreenfloat.txt','w')
+opf3 = open('Dataset/Text/ibluefloat.txt','w')
 
 for i in range(h):
     for j in range(w):

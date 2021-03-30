@@ -1,8 +1,8 @@
- 
 import cv2 as cv
 import numpy
-
-img = cv.imread('Dataset/Image_Vid/velkoz_color.jpg')
+img2 = cv.imread('Dataset/Image_Vid/velkoz_color.jpg')
+img = cv.resize(img2,dsize=(500,500))
+cv.imwrite("Dataset/Image_Vid/velkoz_color.jpg",img)
 img_width = img.shape[0]
 img_height = img.shape[1]
 
