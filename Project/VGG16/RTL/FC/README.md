@@ -7,3 +7,7 @@
 # Fully connected layer
 
 ![image](FC.png)
+
+# E^x
+
+![image](Ex.png)
