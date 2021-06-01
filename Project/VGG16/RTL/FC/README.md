@@ -4,6 +4,6 @@
 
 ![image](193746410_225722802394881_2763240672124634979_n.png)
 
-#Fully connected layer
+# Fully connected layer
 
 ![image](FC.png)
